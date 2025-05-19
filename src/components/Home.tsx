@@ -1,5 +1,6 @@
 import Selfie from "../assets/selfie.jpg";
 import Button from "./Button";
+import ScrollDown from "./ScrollDown";
 import SocialLinks from "./SocialLinks";
 
 function Home() {
@@ -12,13 +13,16 @@ function Home() {
                     alt="Ryan Garofano"
                 />
                 <h1 className="text-3xl">
-                    Hello! my name is {}
+                    <span className="hidden sm:inline">Hello! my name is {}</span>
                     <span className="font-semibold">Ryan Garofano</span>
                 </h1>
-                <span className="text-lg">I'm a tech and health enthusiast</span>
+                <span className="text-lg">
+                    <span className="hidden sm:inline">I'm a {}</span>tech and health enthusiast
+                </span>
                 <SocialLinks />
                 <Button text="Get In Touch" />
             </div>
+            <ScrollDown />
         </section>
     );
 }
