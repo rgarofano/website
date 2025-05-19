@@ -1,5 +1,5 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
 
 :root {
     --dark-green: #386641;
@@ -9,6 +9,33 @@
     --red: #bc4749;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+html, body, #root, #root>div {
+    height: 100%;
+}
+
 body {
-    background-color: var(--background);
+    font-family: "Rubik";
+    padding-left: 5rem;
 }
