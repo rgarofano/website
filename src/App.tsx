@@ -7,7 +7,7 @@ function App() {
     return (
         <div>
             <Sidebar />
-            <main className="ml-20">
+            <main className="m-0 sm:ml-20">
                 <Home />
                 <About />
                 <Contact />
