@@ -12,7 +12,7 @@ function Sidebar() {
     const [showMenu, setShowMenu] = useState(false);
     return (
         <>
-            <aside className={`fixed ${showMenu ? "left-0" : "left-[-5rem] sm:left-0"} top-0 bg-cream shadow-md min-h-full p-2 z-10 flex flex-col justify-between items-center transition-all`}>
+            <aside className={`fixed ${showMenu ? "left-0" : "left-[-5rem] sm:left-0"} top-0 bg-cream shadow-md min-h-full p-2 z-20 flex flex-col justify-between items-center transition-all`}>
                 <a href="#home">
                     <img className="size-15" src={Logo} alt="logo" />
                 </a>

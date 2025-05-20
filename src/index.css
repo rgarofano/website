@@ -31,6 +31,24 @@ body {
     font-family: "Rubik";
 }
 
+.wave {
+    position: absolute;
+    width: 150%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(117% + 1.3px);
+    height: 202px;
+}
+
+.wave .shape-fill {
+    fill: #F2E8CF;
+}
+
 @theme {
     --color-mydarkgreen: #386641;
     --color-mygreen: #6a994e;
@@ -38,4 +56,15 @@ body {
     --color-myred: #bc4749;
     --color-cream: #f2e8cf;
     --color-linkedin: #0072b1;
+
+    --animate-wave: wave 8s ease-in-out infinite alternate; 
+
+    @keyframes wave {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-30%)
+        }
+    }
 }
