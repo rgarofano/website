@@ -5,11 +5,14 @@ import { MdOutlineCopyright } from "react-icons/md";
 import { RiGraduationCapLine } from "react-icons/ri";
 import NavLink from "./NavLink";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { useState } from "react";
+import { IoClose } from "react-icons/io5";
 
 function Sidebar() {
+    const [showMenu, setShowMenu] = useState(false);
     return (
         <>
-            <aside className="hidden fixed left-0 top-0 bg-cream shadow-md min-h-full p-2 z-10 sm:flex flex-col justify-between items-center">
+            <aside className={`fixed ${showMenu ? "left-0" : "left-[-5rem] sm:left-0"} top-0 bg-cream shadow-md min-h-full p-2 z-10 flex flex-col justify-between items-center transition-all`}>
                 <a href="#home">
                     <img className="size-15" src={Logo} alt="logo" />
                 </a>
@@ -30,8 +33,11 @@ function Sidebar() {
                     <MdOutlineCopyright /> 2025
                 </footer>
             </aside>
-            <div className="fixed top-5 left-7 text-3xl bg-cream p-2 shadow-md rounded-lg hover:cursor-pointer">
-                <RxHamburgerMenu />
+            <div
+                className={`fixed ${ showMenu ? "top-20 left-15 bg-myred text-white" : "top-5 left-7" } text-3xl bg-cream p-2 shadow-md rounded-lg hover:cursor-pointer transition-all`}
+                onClick={() => setShowMenu((current) => !current)}
+            >
+                {showMenu ? <IoClose className="relative left-[0.4rem]"/> : <RxHamburgerMenu />}
             </div>
         </>
     );
