@@ -57,7 +57,7 @@ body {
     --color-cream: #f2e8cf;
     --color-linkedin: #0072b1;
 
-    --animate-wave: wave 8s ease-in-out infinite alternate; 
+    --animate-wave: wave 15s ease-in-out infinite alternate; 
 
     @keyframes wave {
         0% {
