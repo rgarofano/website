@@ -5,7 +5,7 @@ import SocialLinks from "./SocialLinks";
 
 function Home() {
     return (
-        <section className="min-h-screen max-w-5xl flex flex-col justify-center items-center gap-5 z-10">
+        <section className="min-h-screen flex flex-col justify-center items-center gap-5 z-10">
             <div className="flex flex-col items-center gap-4">
                 <img
                     className="size-40 rounded-full object-cover"
