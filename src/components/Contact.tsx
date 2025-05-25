@@ -19,7 +19,7 @@ function Contact(props: ContactProps) {
   }
 
   return (
-    <section className="mt-10 flex flex-col items-center gap-10">
+    <section id="contact" className="mt-10 flex flex-col items-center gap-10">
       <h2 className="text-3xl text-center font-bold">Contact Me</h2>
       <div
         className="w-fit flex items-center justify-center rounded-xl hover:cursor-pointer"
@@ -40,6 +40,7 @@ function Contact(props: ContactProps) {
           <IoIosMail className="bg-myred p-2 size-11 rounded-r-xl text-white" />
         )}
       </div>
+      <form></form>
     </section>
   );
 }
