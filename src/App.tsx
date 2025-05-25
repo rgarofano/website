@@ -13,7 +13,7 @@ function App() {
                 <Home />
                 <h2 className="text-3xl text-center font-bold">My Experience</h2>
                 <Experience />
-                <Contact />
+                <Contact email="ryan@ryangarofano.ca" />
             </main>
         </div>
     );

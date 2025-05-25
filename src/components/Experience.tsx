@@ -8,7 +8,7 @@ import ExperienceCard from "./ExperienceCard";
 function Experience() {
   return (
     <div className="flex flex-wrap justify-center gap-10">
-      <section className="flex flex-col gap-10 w-150 p-10 rounded-2xl sm:shadow-gray-400 sm:shadow-lg">
+      <section className="flex flex-col sm:gap-10 w-150 p-10 rounded-2xl sm:shadow-gray-400 sm:shadow-lg">
         <ExperienceCard
           icon={arista}
           iconLink="https://www.arista.com"
