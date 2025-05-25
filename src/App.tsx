@@ -9,8 +9,9 @@ function App() {
         <div>
             <Wave />
             <Sidebar />
-            <main className="m-0 sm:ml-20">
+            <main className="m-0 sm:ml-20 flex flex-col gap-10">
                 <Home />
+                <h2 className="text-3xl text-center font-bold">My Experience</h2>
                 <Experience />
                 <Contact />
             </main>

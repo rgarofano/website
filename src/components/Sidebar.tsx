@@ -12,7 +12,7 @@ function Sidebar() {
     const [showMenu, setShowMenu] = useState(false);
     return (
         <>
-            <aside className={`fixed ${showMenu ? "left-0" : "left-[-5rem] sm:left-0"} top-0 bg-cream shadow-md min-h-full p-2 z-10 flex flex-col justify-between items-center transition-all`}>
+            <aside className={`fixed ${showMenu ? "left-0" : "left-[-5rem] sm:left-0"} top-0 bg-cream shadow-md min-h-full p-2 z-30 flex flex-col justify-between items-center transition-all`}>
                 <a href="#home">
                     <img className="size-15" src={Logo} alt="logo" />
                 </a>
@@ -34,7 +34,7 @@ function Sidebar() {
                 </footer>
             </aside>
             <div
-                className={`fixed ${ showMenu ? "top-20 left-15 bg-myred text-white" : "top-5 left-7 bg-white" } text-3xl p-2 shadow-md rounded-lg hover:cursor-pointer transition-all`}
+                className={`fixed ${ showMenu ? "top-20 left-15 bg-myred text-white" : "top-5 left-7 bg-white" } text-3xl p-2 shadow-md rounded-lg z-20 hover:cursor-pointer transition-all`}
                 onClick={() => setShowMenu((current) => !current)}
             >
                 {showMenu ? <IoClose className="relative left-[0.4rem]"/> : <RxHamburgerMenu />}
